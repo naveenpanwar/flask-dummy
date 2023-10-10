@@ -11,10 +11,10 @@ COPY . .
 RUN pip install --trusted-host pypi.python.org -r requirements.txt
 
 # Make port 80 available to the world outside this container
-EXPOSE 5000
+EXPOSE 8080
 
 # Define environment variable
 ENV NAME World
 
 # Run index.py when the container launches
-CMD ["python", "index.py"]
+CMD python index.py
