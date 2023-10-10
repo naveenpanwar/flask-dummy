@@ -17,4 +17,4 @@ EXPOSE 8080
 ENV NAME World
 
 # Run index.py when the container launches
-CMD python index.py
+ENTRYPOINT ["python", "index.py"]
