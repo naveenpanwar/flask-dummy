@@ -5,6 +5,10 @@ app = Flask(__name__)
 
 @app.route("/")
 def get_session_token():
+    """
+    Just a dummy function
+    :return: string
+    """
     return "Some answer."
 
 
